@@ -32,7 +32,7 @@ const down = store => {
           store.commit('moveBlock', next)
           timeStamp = next.timeStamp
         } else {
-          cur.timeStamp += parseInt(parseInt(delay, 10) / 1.5, 10) // 真实移动delay多一点，碰壁delay少一点
+          cur.timeStamp += parseInt(parseInt(delay, 10) / 1.5, 10)
           store.commit('moveBlock', cur)
           timeStamp = cur.timeStamp
         }

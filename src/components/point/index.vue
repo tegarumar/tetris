@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{label}}</p>
+    <p :title="label">{{label}}</p>
     <Number :number="number"/>
   </div>
 </template>

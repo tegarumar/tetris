@@ -14,10 +14,8 @@ const down = store => {
       const cur = state.cur
       const isPause = state.pause
       if (cur !== null) {
-        // 暂停
         states.pause(!isPause)
       } else {
-        // 新的开始
         states.start()
       }
     }

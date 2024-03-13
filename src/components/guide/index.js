@@ -8,13 +8,7 @@ export default {
     }
   },
   computed: {
-    linkTitle: () => i18n.linkTitle[lan],
-    github: () => i18n.github[lan],
-    QRCode: () => i18n.QRCode[lan],
-    QRTitle: () => i18n.QRNotice[lan],
-    QRSrc: () =>
-      window.location.protocol +
-      '//raw.githubusercontent.com/Binaryify/vue-tetris/master/static/qr.jpeg'
+    // computed
   },
   mounted() {
     window.addEventListener('resize', this.resize.bind(this), true)

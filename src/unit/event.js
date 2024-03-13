@@ -1,54 +1,54 @@
-const eventName = {}
+const eventName = {};
 
-const down = o => {
-  // 键盘、手指按下
-  const keys = Object.keys(eventName)
-  keys.forEach(i => {
-    clearTimeout(eventName[i])
-    eventName[i] = null
-  })
+const down = (o) => {
+  // keyboard, finger down
+  const keys = Object.keys(eventName);
+  keys.forEach((i) => {
+    clearTimeout(eventName[i]);
+    eventName[i] = null;
+  });
   if (!o.callback) {
-    return
+    return;
   }
   const clear = () => {
-    clearTimeout(eventName[o.key])
-  }
-  o.callback(clear)
+    clearTimeout(eventName[o.key]);
+  };
+  o.callback(clear);
   if (o.once === true) {
-    return
+    return;
   }
-  let begin = o.begin || 100
-  const interval = o.interval || 50
+  let begin = o.begin || 100;
+  const interval = o.interval || 50;
   const loop = () => {
     eventName[o.key] = setTimeout(() => {
-      begin = null
-      loop()
-      o.callback(clear)
-    }, begin || interval)
-  }
-  loop()
-}
+      begin = null;
+      loop();
+      o.callback(clear);
+    }, begin || interval);
+  };
+  loop();
+};
 
-const up = o => {
-  // 键盘、手指松开
-  clearTimeout(eventName[o.key])
-  eventName[o.key] = null
+const up = (o) => {
+  // keyboard, finger up
+  clearTimeout(eventName[o.key]);
+  eventName[o.key] = null;
   if (!o.callback) {
-    return
+    return;
   }
-  o.callback()
-}
+  o.callback();
+};
 
 const clearAll = () => {
-  const keys = Object.keys(eventName)
-  keys.forEach(i => {
-    clearTimeout(eventName[i])
-    eventName[i] = null
-  })
-}
+  const keys = Object.keys(eventName);
+  keys.forEach((i) => {
+    clearTimeout(eventName[i]);
+    eventName[i] = null;
+  });
+};
 
 export default {
   down,
   up,
-  clearAll
-}
+  clearAll,
+};

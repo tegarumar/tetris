@@ -32,13 +32,10 @@ export default {
     onChange({cur, point, max} ) {
       clearInterval(Point.timeout)
       if (cur) {
-        // 在游戏进行中
         this.label = point >= max ? ZDF : DF
         this.number = point
       } else {
-        // 游戏未开始
         const toggle = () => {
-          // 最高分与上轮得分交替出现
           this.label = SLDF
           this.number = point
           Point.timeout = setTimeout(() => {
@@ -49,7 +46,6 @@ export default {
         }
 
         if (point !== 0) {
-          // 如果为上轮没玩, 也不用提示了
           toggle()
         } else {
           this.label=ZDF

@@ -1,0 +1,90 @@
+{
+  "lan": ["en", "id"],
+  "default": "id",
+  "data": {
+    "title": {
+      "en": "T E T R I S",
+      "id": "T E T R I S"
+    },
+    "github": {
+      "en": "GitHub",
+      "id": "GitHub"
+    },
+    "linkTitle": {
+      "en": "View data source",
+      "id": "Lihat sumber data"
+    },
+    "QRCode":{
+      "en": "QR code",
+      "id": "QR code"
+    },
+    "QRNotice": {
+      "en": "Scan QR code to play with a mobile phone",
+      "id": "Scan QR code untuk bermain di handphone"
+    },
+    "titleCenter": {
+      "en": "TETRIS",
+      "id": "TETRIS"
+    },
+    "point": {
+      "en": "Point",
+      "id": "Poin"
+    },
+    "highestScore": {
+      "en": "Max",
+      "id": "Max"
+    },
+    "lastRound": {
+      "en": "Last Round",
+      "id": "Ronde Terakhir"
+    },
+    "cleans": {
+      "en": "Cleans",
+      "id": "Cleans"
+    },
+    "level": {
+      "en": "Gravitasi",
+      "id": "Gravitasi"
+    },
+    "startLine": {
+      "en": "Level",
+      "id": "Level"
+    },
+    "next": {
+      "en": "Next",
+      "id": "Selanjutnya"
+    },
+    "pause": {
+      "en": "Pause",
+      "id": "Pause"
+    },
+    "sound": {
+      "en": "Sound",
+      "id": "Suara"
+    },
+    "reset": {
+      "en": "Reset",
+      "id": "Reset"
+    },
+    "rotation": {
+      "en": "Rotation",
+      "id": "Putar"
+    },
+    "left": {
+      "en": "Left",
+      "id": "Kiri"
+    },
+    "right": {
+      "en": "Right",
+      "id": "Kanan"
+    },
+    "down": {
+      "en": "Down",
+      "id": "Bawah"
+    },
+    "drop": {
+      "en": "Drop",
+      "id": "Jatuhkan"
+    }
+  }
+}
